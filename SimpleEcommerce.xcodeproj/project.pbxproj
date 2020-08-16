@@ -184,13 +184,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD1B5B2024E5A650006A86A2 /* models */ = {
+		FD1B5B2024E5A650006A86A2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				FD1B5B2424E5A65F006A86A2 /* Category.swift */,
 				FD1B5B2324E5A65F006A86A2 /* ProductPromo.swift */,
 			);
-			path = models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		FD1B5B3124E605ED006A86A2 /* Extension */ = {
@@ -221,6 +221,7 @@
 		FD2173FB24E74AD400045243 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FD1B5B3124E605ED006A86A2 /* Extension */,
 				FD97128D24E8BDF90035B2B2 /* SplashViewController.swift */,
 				FDF7EB9724E56DDF002505BB /* HomeViewController.swift */,
 				FD58D36A24E7A6EA00EC19AA /* ProductDetailViewController.swift */,
@@ -237,6 +238,8 @@
 		FD58D35E24E770F800EC19AA /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FD2173FB24E74AD400045243 /* Controller */,
+				FD97129124E8D6800035B2B2 /* storyboards */,
 				FD58D35F24E7710B00EC19AA /* customs */,
 				FD1B5B3624E628C0006A86A2 /* cells */,
 				FDC223DA24E50F5D00FB2A5B /* Main.storyboard */,
@@ -252,6 +255,32 @@
 				FD58D36224E7713000EC19AA /* HeaderView.xib */,
 			);
 			path = customs;
+			sourceTree = "<group>";
+		};
+		FD97129124E8D6800035B2B2 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		FD97129224E8D69B0035B2B2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FD1B5B1C24E59D90006A86A2 /* ProductViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		FD97129324E8D6A40035B2B2 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FDC223DD24E50F6600FB2A5B /* Assets.xcassets */,
+				FD1B5B1A24E5991A006A86A2 /* Constants.swift */,
+				FD1B5B1E24E59FF5006A86A2 /* ApiHelper.swift */,
+				FDC2240424E527D900FB2A5B /* Resources */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		FDC223C824E50F5D00FB2A5B = {
@@ -279,18 +308,13 @@
 		FDC223D324E50F5D00FB2A5B /* SimpleEcommerce */ = {
 			isa = PBXGroup;
 			children = (
+				FD1B5B2024E5A650006A86A2 /* Models */,
 				FD58D35E24E770F800EC19AA /* Views */,
-				FD2173FB24E74AD400045243 /* Controller */,
-				FD1B5B3124E605ED006A86A2 /* Extension */,
-				FD1B5B2024E5A650006A86A2 /* models */,
-				FDC2240424E527D900FB2A5B /* Resources */,
+				FD97129224E8D69B0035B2B2 /* ViewModels */,
+				FD97129324E8D6A40035B2B2 /* SupportingFiles */,
 				FDC223D424E50F5D00FB2A5B /* AppDelegate.swift */,
 				FDC223D624E50F5D00FB2A5B /* SceneDelegate.swift */,
-				FDC223DD24E50F6600FB2A5B /* Assets.xcassets */,
 				FDC223E224E50F6600FB2A5B /* Info.plist */,
-				FD1B5B1A24E5991A006A86A2 /* Constants.swift */,
-				FD1B5B1C24E59D90006A86A2 /* ProductViewModel.swift */,
-				FD1B5B1E24E59FF5006A86A2 /* ApiHelper.swift */,
 			);
 			path = SimpleEcommerce;
 			sourceTree = "<group>";
