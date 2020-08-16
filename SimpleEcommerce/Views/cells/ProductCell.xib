@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="300" id="ZaX-GA-UVq" customClass="ProductCell" customModule="SimpleEcommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZaX-GA-UVq" id="KTz-Fn-Y4y">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-vd-nwh" customClass="DesignableView" customModule="SimpleEcommerce" customModuleProvider="target">
+                        <rect key="frame" x="20" y="11" width="374" height="278"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ini Product" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efo-40-dfL">
+                                <rect key="frame" x="15" y="243" width="344" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Lap-87-JdI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.25490196079999999" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons-picture.png" translatesAutoresizingMaskIntoConstraints="NO" id="6XT-s6-DeW">
+                                <rect key="frame" x="5" y="5" width="364" height="213"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-Vz-V7J">
+                                <rect key="frame" x="20" y="198" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="26G-P8-9GP"/>
+                                    <constraint firstAttribute="height" constant="25" id="cE7-y5-ogh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Efo-40-dfL" secondAttribute="bottom" constant="20" id="3eT-sm-2pd"/>
+                            <constraint firstAttribute="trailing" secondItem="6XT-s6-DeW" secondAttribute="trailing" constant="5" id="CD5-qQ-cu0"/>
+                            <constraint firstItem="Efo-40-dfL" firstAttribute="leading" secondItem="Q63-vd-nwh" secondAttribute="leading" constant="15" id="PMJ-hh-F68"/>
+                            <constraint firstItem="Yda-Vz-V7J" firstAttribute="bottom" secondItem="6XT-s6-DeW" secondAttribute="bottom" constant="5" id="Qjw-hR-FWw"/>
+                            <constraint firstItem="6XT-s6-DeW" firstAttribute="leading" secondItem="Q63-vd-nwh" secondAttribute="leading" constant="5" id="Rmb-zX-cpV"/>
+                            <constraint firstAttribute="trailing" secondItem="Efo-40-dfL" secondAttribute="trailing" constant="15" id="liI-AN-429"/>
+                            <constraint firstItem="6XT-s6-DeW" firstAttribute="top" secondItem="Q63-vd-nwh" secondAttribute="top" constant="5" id="wmS-FT-vSC"/>
+                            <constraint firstItem="Yda-Vz-V7J" firstAttribute="leading" secondItem="6XT-s6-DeW" secondAttribute="leading" constant="15" id="zct-7E-dXR"/>
+                            <constraint firstItem="Efo-40-dfL" firstAttribute="top" secondItem="6XT-s6-DeW" secondAttribute="bottom" constant="25" id="zkE-gX-srI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q63-vd-nwh" firstAttribute="top" secondItem="KTz-Fn-Y4y" secondAttribute="topMargin" id="8LZ-cG-by7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Q63-vd-nwh" secondAttribute="bottom" id="hLh-vf-6p9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Q63-vd-nwh" secondAttribute="trailing" id="jZ7-hS-idO"/>
+                    <constraint firstItem="Q63-vd-nwh" firstAttribute="leading" secondItem="KTz-Fn-Y4y" secondAttribute="leadingMargin" id="lQi-iQ-tAx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="productImg" destination="6XT-s6-DeW" id="YHR-CZ-O6q"/>
+                <outlet property="productLoveImg" destination="Yda-Vz-V7J" id="k6M-2G-83A"/>
+                <outlet property="productName" destination="Efo-40-dfL" id="bL9-Go-poB"/>
+            </connections>
+            <point key="canvasLocation" x="114.49275362318842" y="131.25"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon-heart.png" width="50" height="50"/>
+        <image name="icons-picture.png" width="250" height="250"/>
+    </resources>
+</document>
